@@ -1,0 +1,77 @@
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0f172a, #020617);
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+}
+
+.container {
+  width: 360px;
+}
+
+/* CARTÃO */
+.card {
+  border-radius: 18px;
+  padding: 24px;
+  margin-bottom: 20px;
+  color: white;
+  transition: 0.4s ease;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+  position: relative;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.card-number {
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+
+.card-brand {
+  margin-top: 15px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* INPUT */
+input {
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  margin-top: 10px;
+  font-size: 16px;
+  background: #e5e7eb;
+  box-sizing: border-box;
+}
+
+/* RESULTADO */
+#result {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.valid { color: #22c55e; }
+.invalid { color: #ef4444; }
+
+.footer {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  opacity: 0.5;
+}
